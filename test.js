@@ -1,5 +1,12 @@
 describe("pow", function ()
 {
+    it("for negative n, the result is NaN", function (){
+        assert.isNaN(pow(2,-1))
+        })
+        it("for non integer values, the result is NaN", function ()
+        {
+            assert.isNaN(pow(2, 1.5))
+        })
     describe("raises to the power 3", function ()
     {
         function makeTest(x)
@@ -16,6 +23,7 @@ describe("pow", function ()
     })
 
     //other tests here....
+
 })
 
 describe("test", function() {
